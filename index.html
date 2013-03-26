@@ -99,7 +99,7 @@
 					reader.onload = function(e) {
 						lfc.add(e.target.result);
 						renderFiles();
-						if(files.length)
+						if(current < files.length)
 							reader.readAsDataURL(files[current ++]);
 					}
 					
